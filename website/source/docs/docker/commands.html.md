@@ -57,7 +57,7 @@ multi-machine Vagrant setup as shown below, the "name" attribute corresponds
 to the name of the VM, **not** the name of the container:
 
 ```ruby
-Vagrant.configure do |config|
+Vagrant.configure(2) do |config|
   config.vm.define "web" do
     config.vm.provider "docker" do |d|
       d.image = "nginx"
